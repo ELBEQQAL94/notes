@@ -1,0 +1,100 @@
+=============== CHECK SERVICES ========================
+
+service --status-all
+
+============== MONGODB SERVER ========================
+
+Now to start mongodb:
+
+sudo systemctl start mongodb
+
+To stop mongodb service use:
+
+sudo systemctl enable mongodb.service
+
+To enable mongodb on startup:
+
+sudo systemctl stop mongodb
+
+If you need to refresh the services use:
+
+sudo systemctl daemon-reload
+
+
+==================== REOMEVE NODE MODULE FILE ==============
+
+sudo rm -rf node_modules/
+
+
+============ open VSCode as SuperUser ============
+
+sudo code . --user-data-dir="~/.vscode-root"
+
+
+========== RUN SPRING BOOT SERVER ===============
+
+mvn spring-boot:run
+
+
+=============== Create larave 7 models =========
+
+php artisan make:model <name> --migration
+
+
+============== UPGRADE NPM PACKAGES ==========
+
+npm install -g npm-check-updates
+
+ncu -u
+
+
+======== GIT  =================
+
+reset your commit
+
+$ git reset --soft HEAD^ 
+
+change commit
+
+$ git commit --amend
+
+switch branch
+
+$ git checkout -b <name-of-new-branche>
+
+git branches
+
+$ git branch
+
+
+======== ENTER TO MYSQL ==========
+
+ mysql -u root -p
+
+ OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=f1612aa5
+
+============ Angular 9 ===========
+
+create new project: ng new myApp
+
+run app: ng serve -o or ng serve --open
+
+generate component: ng g c <name>
+
+==== laravel 7 run migrate ==========
+
+php artisan migrate
+
+======= Create Database in MYSQL ======
+
+CREATE DATABASE menagerie;
+
+==== Work oganize ======
+
+feature => trillo ticket => branch => merge 
+
+==== Yarn requires Node.js 4.0 or higher ==== 
+
+$ sudo apt install -y nodejs
+$ sudo apt-get update && sudo apt-get install yarn
+

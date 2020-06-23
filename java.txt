@@ -1,0 +1,41 @@
+==== Print message in java 11
+
+  System.out.println("write your message here!");
+
+==== Primitive types
+
+  byte       [-128,127]
+  short      [-32k, 32k]
+  int        [-2B, 2B]
+  long
+  float
+  double
+  char      A, B, C
+  boolean   false/true
+
+==== Store long number
+
+ long lonNumber = 147_456_78_145_159L;
+
+==== Store float number
+
+ float price = 14,10F;
+
+==== store array
+
+int[] items = {1, 2, 3}
+
+==== store multidimensional array
+int[][] items = {{1, 2}, {4, 5}}
+
+==== store const var
+
+final float PI = 3.14;
+
+==== store input user
+
+java.util.Scanner
+Scanner scanner = new Scanner(System.in);
+int age = scanner.nextByte();
+
+

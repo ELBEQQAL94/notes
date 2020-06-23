@@ -1,0 +1,102 @@
+==== Install new project =====
+
+composer create-project --prefer-dist laravel/laravel <project-name>
+
+==== run application =========
+
+ php artisan serve
+
+==== Create Table ========
+
+ php artisan make:migrate <name in pas
+
+==== Drop Table ==========
+
+ php artisan migrate:rollback
+
+==== Run Migrations ======
+
+ php artisan migrate
+
+==== Create new migrate ======
+
+ php artisan make:migration create_posts_table
+
+==== Add something to existe migration ====
+
+ php artisan make:migration add_slug_to_posts
+
+==== Create Controller =======
+
+ php artisan make:controller ApiController
+
+==== seed database ======
+
+ php artisan db:seed 
+
+==== Create model =====
+
+ php artisan make:model Post
+
+==== Create model and migration ====
+
+ php artisan make:model Category -m
+
+==== Create data on cli ====
+
+ php artisan tinker
+
+ makemodel
+
+ ==> $post = new Post();
+ ==> $post->title = 'bla bla';
+ ==> App\Post::all();
+
+==== seed specific class =====
+
+ php artisan db:seed --class=UserSeederTable
+
+==== create seed =======
+
+ php artisan make:seed BookTableSeeder
+
+==== Show all routes ====
+
+ php artisan route:list
+
+==== Create controller ====
+
+ php artisan make:controller PostController --resource
+
+==== Generate all routes ====
+
+ Route::resource('/posts', 'PostController');
+
+==== Generate specific routes ==== 
+
+ Route::resource('/posts', 'PostController')->only(['index', 'show']);
+
+==== route function ====
+
+ route('posts.show', $post->id)
+
+==== make request =====
+
+ php artisan make:request StorePost
+
+==== Run tests ====
+
+./vendor/bin/phpunit
+
+==== Clear configuration cache ===
+
+ php artisan config:clear
+
+==== Generate Test =====
+
+ php artisan make:test PostTest
+
+==== keep old content on input ====
+
+value="{{old('title')}}"
+

@@ -1,0 +1,18 @@
+========= Pass child to your component ======
+
+<button>
+  <slot />
+</button>
+
+======= run vue app in electron server =====
+
+vue ui
+
+==== create new project in vue ====
+
+vue create my-app
+
+==== Add vutify ====
+
+vue add vuetify
+
