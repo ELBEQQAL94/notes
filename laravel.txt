@@ -2,7 +2,7 @@
 
 composer create-project --prefer-dist laravel/laravel <project-name>
 
-==== run application =========
+==== start application =========
 
  php artisan serve
 
@@ -96,7 +96,76 @@ composer create-project --prefer-dist laravel/laravel <project-name>
 
  php artisan make:test PostTest
 
+======= Make Controller =======
+
+php artisan make:controller <name>(camelcase like name class)<Controller>
+
+example: BookController
+
+==== Your requirements could not be resolved to an installable set of packages
+
+sudo apt-get install php7.0-mbstring
+
+sudo apt-get install php7.0-xml or sudo apt-get install php-xml
+
+composer update
+
+
+===== if laravel command not found ==========
+
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+==== server error
+
+1- add .env file
+
+2- sudp php artisan generate:key
+
+3- restart server
+
 ==== keep old content on input ====
 
 value="{{old('title')}}"
+
+==== Prevent repeating route
+
+Route::prefix('admin')->group(function () {
+
+Route::get('/user', function...)
+})
+
+==== could not find driver 
+  sudo apt-get install php-gd php-mysql
+
+==== Fresh Tables ====
+
+  php artisan migrate:fresh
+
+==== make factory ====
+
+ php artisan make:factory PostFactory
+
+==== make implicit controller ==== 
+
+php artisan make:controller Product/ProductController -r -m Product
+
+==== Permission denied ====
+
+sudo chmod -R 777 public/
+
+==== Create middleware ====
+
+php artisan make:middleware TransformInput
+
+and then... regester middleware on kernel.php
+
+==== Create password for client ====
+
+php artisan passport:client --password
+
+==== Create personal secret ====
+
+php artisan passport:client --personal
+
+
 
