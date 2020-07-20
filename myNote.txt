@@ -35,6 +35,10 @@ sudo code . --user-data-dir="~/.vscode-root"
 
 mvn spring-boot:run
 
+=============== Create larave 7 models =========
+
+php artisan make:model <name> --migration
+
 
 ============== UPGRADE NPM PACKAGES ==========
 
@@ -76,6 +80,10 @@ run app: ng serve -o or ng serve --open
 
 generate component: ng g c <name>
 
+==== laravel 7 run migrate ==========
+
+php artisan migrate
+
 ======= Create Database in MYSQL ======
 
 CREATE DATABASE menagerie;
@@ -89,3 +97,7 @@ feature => trillo ticket => branch => merge
 $ sudo apt install -y nodejs
 $ sudo apt-get update && sudo apt-get install yarn
 
+==== Php my admin ====
+
+username: youssef
+password: hadak nit

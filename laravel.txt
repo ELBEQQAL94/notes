@@ -24,7 +24,7 @@ composer create-project --prefer-dist laravel/laravel <project-name>
 
 ==== Add something to existe migration ====
 
- php artisan make:migration add_slug_to_posts
+ php artisan make:migration add_slug_to_posts --table=posts
 
 ==== Create Controller =======
 
@@ -111,11 +111,11 @@ sudo apt-get install php7.0-xml or sudo apt-get install php-xml
 composer update
 
 
-===== if laravel command not found ==========
+===== laravel command not found ==========
 
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-==== server error
+==== server error ====
 
 1- add .env file
 
@@ -127,14 +127,15 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 value="{{old('title')}}"
 
-==== Prevent repeating route
+==== Prevent repeating route ====
 
 Route::prefix('admin')->group(function () {
 
 Route::get('/user', function...)
 })
 
-==== could not find driver 
+==== could not find driver ====
+ 
   sudo apt-get install php-gd php-mysql
 
 ==== Fresh Tables ====
@@ -167,5 +168,18 @@ php artisan passport:client --password
 
 php artisan passport:client --personal
 
+==== make authentication ====
 
+1# composer require laravel/ui
+2# php artisan ui vue --auth
+3# yarn
+4# yarn dev
+
+
+
+public scope to make that variable/function available from anywhere, other classes and instances of the object.
+
+private scope when you want your variable/function to be visible in its own class only.
+
+protected scope when you want to make your variable/function visible in all classes that extend current class including the parent class.
 

@@ -1,0 +1,58 @@
+==== run wordpres dev on local machine ====
+
+==== go to /var/www/html ====
+
+==== open wordpress source code ====
+
+==== create index.php ====
+
+==== style.css ====
+
+==== embed stylesheet ====
+
+href="<?php bloginfo('stylesheet_url'); ?>"
+
+==== embed template style ====
+
+href="<?php bloginfo('template_url'); ?>/css/bootstrap.css"
+
+==== embed language dynamicly ===
+
+<?php language_attributes(); ?>
+
+==== charset ====
+
+charset="<?php bloginfo('charset'); ?>
+
+
+==== meta ====
+
+<meta name="description" content="<?php bloginfo('description'); ?>">
+
+==== document title ====
+
+<?php bloginfo('name'); ?> |
+<?php is_front_page() ? bloginfo('description') : wp_title()?>
+
+==== header function for plugin ====
+
+<?php wp_head(); ?>
+
+==== add admin bar ====
+
+<?php wp_footer(); ?>
+
+==== header ====
+
+<?php get_header(); ?>
+
+==== footer ====
+
+<?php get_footer(); ?>
+
+==== dynamic date ====
+<?php echo Date('Y'); ?>
+
+
+==== The requested URL was not found on this server ====
+/index.php/%year%/%monthnum%/%day%/%postname%/
