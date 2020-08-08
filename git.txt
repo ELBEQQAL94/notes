@@ -13,6 +13,7 @@ fix merge issue
 git add .
 git commit 
 git push
+click for approve megrged conflicts for added merged request
 
 ==== Switch to another branch ====
 
