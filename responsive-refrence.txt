@@ -1,0 +1,46 @@
+/* Responsive */
+
+@media all and (max-width: 1800px){
+
+
+
+}
+
+@media all and (max-width: 1610px){
+}
+
+@media all and (max-width: 1560px){
+
+}
+
+@media all and (max-width: 1440px){
+
+}
+
+@media all and (max-width: 1365px){
+
+}
+
+@media all and (max-width: 1279px){
+}
+
+@media all and (max-width: 1199px){ 
+}
+
+@media all and (max-width: 991px){
+
+}
+
+@media all and (max-width: 767px){
+  
+}
+
+@media all and (max-width: 575px){
+  
+}
+
+@media all and (max-width: 479px){
+  
+}
+
+

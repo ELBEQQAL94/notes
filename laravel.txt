@@ -2,13 +2,15 @@
 
 composer create-project --prefer-dist laravel/laravel <project-name>
 
+laravel new blog
+
 ==== start application =========
 
  php artisan serve
 
 ==== Create Table ========
 
- php artisan make:migrate <name in pas
+ php artisan make:migration CreateUserTable
 
 ==== Drop Table ==========
 
@@ -66,7 +68,7 @@ composer create-project --prefer-dist laravel/laravel <project-name>
 
 ==== Create controller ====
 
- php artisan make:controller PostController --resource
+ php artisan make:controller PostController --r
 
 ==== Generate all routes ====
 
@@ -168,6 +170,24 @@ php artisan passport:client --password
 
 php artisan passport:client --personal
 
+
+==== Laravel Passport Route [login] not defined ====
+
+Accept => application/json
+
+==== auth()->user() ==> unauthorized ====
+
+php artisan config:clear
+
+
+==== make tests ====
+
+php artisan make:test CEOTest
+
+==== Method Illuminate\\Auth\\RequestGuard::logout does not exist ====
+
+auth('web')->logout();
+
 ==== make authentication ====
 
 1# composer require laravel/ui
@@ -176,10 +196,18 @@ php artisan passport:client --personal
 4# yarn dev
 
 
+==== create admin default ====
 
-public scope to make that variable/function available from anywhere, other classes and instances of the object.
+php artisan make:seeder AdminUserSeeder
 
-private scope when you want your variable/function to be visible in its own class only.
+==== Run Single Seeder ====
 
-protected scope when you want to make your variable/function visible in all classes that extend current class including the parent class.
+php artisan db:seed --class=AdminUserSeeder
+
+==== Auth ===
+
+use Illuminate\Support\Facades\Auth;
+
+
+
 

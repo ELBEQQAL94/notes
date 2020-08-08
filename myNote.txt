@@ -101,3 +101,14 @@ $ sudo apt-get update && sudo apt-get install yarn
 
 username: youssef
 password: hadak nit
+
+==== upgrade dependencies ====
+
+npx npm-upgrade
+npm i
+
+==== marvel ====
+
+Your public key: 2a5432800cecf96407386a66a2a8a234
+
+Your private key: aeeb2521ad6065fa4f54f3b16b765884b4984dc3

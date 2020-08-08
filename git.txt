@@ -1,0 +1,60 @@
+==== Ceate new branch and diplay it ====
+
+sudo git checkout -b <branch_name>
+
+
+==== Fix merge conflicts ====
+
+git checkout master
+git pull
+git checkout add-react-router-dom
+git merge master
+fix merge issue
+git add .
+git commit 
+git push
+
+==== Switch to another branch ====
+
+sudo git checkout <branch_name>
+
+==== Save new changes before switch to another branch ====
+
+sudo git stash
+==== Remove vscode-root ====
+
+sudo git rm -r \~
+sudo git rm -r --cached '~/.vscode-root'
+
+==== Check stages ==========
+
+sudo git checkout staging 
+
+==== merge feature branch to mastre branch ====
+
+sudo git merge master
+
+==== remove remote repo ====
+
+sudo git remote remove origin
+
+==== If gitignore not working ====
+
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+
+==== destroy branch ====
+
+git push -d https://github.com/me50/ELBEQQAL94.git project-0
+
+==== key is invalid ====
+
+vi ~/.ssh/id_rsa.pub
+
+SHA256:NNk+QEXB2tQcbcUFeesJV5BmCFU7qhwiRLysFAawKMk
+SHA256:1rUhdb+E1AS1P2yTufdj+W3YWGy62T28bcBcHfSUHb4
+
+==== use ssh key instead http git remote ====
+
+git remote set-url origin git@gitlab.comblabla

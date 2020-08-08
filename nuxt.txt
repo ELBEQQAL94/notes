@@ -1,0 +1,36 @@
+==== Sass Loader has been initialized using an options object that does not match the API schema ===
+
+npm uninstall --save-dev sass-loader
+npm install --save-dev sass-loader@7.1.0
+
+==== change port ====
+
+nux.config.js
+
+server: {
+  port: 9090,
+}
+
+==== test load balenc ====
+
+artillery
+
+==== FontAwesome 5 ====
+
+yarn add nuxt-fontawesome
+
+yarn add @fortawesome/fontawesome @fortawesome/fontawesome-free-brands @fortawesome/fontawesome-free-solid
+
+ modules: [
+        ['nuxt-fontawesome', {
+            component: 'fa',
+            imports: [
+              {
+                set: '@fortawesome/free-solid-svg-icons',
+                icons: ['faDollarSign']
+              }
+            ]
+          }]
+      ],
+
+<fa :icon="['fas', 'dollar-sign']" />

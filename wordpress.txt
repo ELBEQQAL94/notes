@@ -1,6 +1,6 @@
 ==== run wordpres dev on local machine ====
 
-==== go to /var/www/html ====
+==== go to /var/www/html/wp-content/themes ====
 
 ==== open wordpress source code ====
 
@@ -56,3 +56,6 @@ charset="<?php bloginfo('charset'); ?>
 
 ==== The requested URL was not found on this server ====
 /index.php/%year%/%monthnum%/%day%/%postname%/
+
+==== Permission denied ====
+sudo chown -R www-data:www-data /var/www
